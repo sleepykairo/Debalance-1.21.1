@@ -1,0 +1,36 @@
+{
+  "item.debalance.dummy": "Training Dummy",
+  "item.debalance.ore_finder": "Ore Finder",
+  "item.debalance.ruby_staff": "Ruby Staff",
+  "item.debalance.dripstone_cannon": "Dripstone Cannon",
+  "item.debalance.fire_javelin": "Fire Javelin",
+  "item.debalance.magma_crossbow": "Magma Crossbow",
+
+  "item.debalance.marble_sword": "Marble Gladius",
+  "item.debalance.vorpal_sword": "Vorpal Sword",
+  "item.debalance.earth_sword": "Earth Blade",
+  "item.debalance.bone_sword": "Bone Sword",
+  "item.debalance.midas_sword": "Sir Midas' Ancient Shortsword",
+  "item.debalance.midas_sword.half": "Prince Midas' Royal Blade of Might",
+  "item.debalance.midas_sword.max": "§6King Midas' Legendary Royal Greatsword of Greed",
+  "item.debalance.soulbound_sword": "Soulbound Sword",
+
+  "tooltip.debalance.info": "SNEAK for info",
+  "tooltip.debalance.soulbound_sword.info": "Steals the energy of your enemies",
+  "tooltip.debalance.soulbound_sword.info_1": "Killing an enemy will add some of their health to the sword's power",
+
+
+  "block.debalance.marble": "Marble",
+
+  "block.debalance.ruby_ore": "Ruby Ore",
+  "block.debalance.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.debalance.sapphire_ore": "Sapphire Ore",
+  "block.debalance.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+
+
+  "enchantment.debalance.voltage": "Voltage",
+  "enchantment.debalance.gust": "Gust",
+
+
+  "entity.debalance.dummy": "Training Dummy"
+}

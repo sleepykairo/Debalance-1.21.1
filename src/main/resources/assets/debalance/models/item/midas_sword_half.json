@@ -1,0 +1,6 @@
+{
+    "parent": "debalance:item/midas_sword",
+    "textures": {
+        "layer0": "debalance:item/midas_sword_half"
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "minecraft:soul_lantern"
+    },
+    "N": {
+      "item": "minecraft:netherite_sword"
+    },
+    "R": {
+      "item": "minecraft:respawn_anchor"
+    },
+    "S": {
+      "item": "minecraft:soul_sand"
+    },
+    "W": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "n": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "SWS",
+    "nNn",
+    "LRL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "debalance:soulbound_sword"
+  }
+}

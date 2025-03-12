@@ -1,0 +1,9 @@
+// 1.21.1	2025-03-12T08:48:59.7720384	Debalance/Recipes
+ea67211a1e397da2191d9a813e63504a185b15ab data\debalance\advancement\recipes\combat\soulbound_sword.json
+172679ed7939e3876f960b07d3fe1ced3310b833 data\debalance\recipe\soulbound_sword.json
+5d775b9483d7c182efc168bc0b236c2c5414e445 data\debalance\recipe\bone_sword.json
+87bd4646366fa10f6754215d46de6fde1047f127 data\debalance\recipe\magma_crossbow.json
+d0fa857b62432cb98d40d17a8189c1a5dea9fc32 data\debalance\advancement\recipes\combat\magma_crossbow.json
+2513ddefa21f9ba36ae96d63cb52a6136fbe9c23 data\debalance\recipe\blazing_core.json
+72abc3043211dc5bfe31c9422253b884999d389d data\debalance\advancement\recipes\misc\blazing_core.json
+f323ecdd1f12685a18d2beb9e8c5181123ef8391 data\debalance\advancement\recipes\combat\bone_sword.json

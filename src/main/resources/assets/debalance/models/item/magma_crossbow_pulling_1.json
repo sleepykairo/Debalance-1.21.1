@@ -1,0 +1,6 @@
+{
+    "parent": "debalance:item/magma_crossbow",
+    "textures": {
+        "layer0": "debalance:item/magma_crossbow_pulling_1"
+    }
+}

@@ -1,0 +1,6 @@
+// 1.21.1	2025-03-12T08:48:59.7720384	Debalance/Block Loot Tables
+f723e4105f1ca1f904ca23b6cc267477568e5f9d data\debalance\loot_table\blocks\sapphire_ore.json
+2e13b8d0e3ed93777b22a8d75982034ac5cece9f data\debalance\loot_table\blocks\ruby_ore.json
+b243cde27b1b5832de4b6dcc7ae42fa7530d9ec2 data\debalance\loot_table\blocks\deepslate_ruby_ore.json
+57278ec7f04910f2393d0e3f1d31738744e43bb3 data\debalance\loot_table\blocks\marble.json
+f7505446fcf6b0f110e1d5b707bfaa01a29cf754 data\debalance\loot_table\blocks\deepslate_sapphire_ore.json

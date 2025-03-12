@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "net.sleepykairo.debalance.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "DisableShieldMixin",
+    "EntityTickMixin",
+    "EntityVoltageMixin",
+    "PlayerAttackMixin",
+    "PlayerNetherAccessMixin",
+    "PlayerPermStatMixin",
+    "PlayerShieldCooldownMixin",
+    "WitherEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
