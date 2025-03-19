@@ -23,12 +23,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.VORPAL_SWORD)
                 .add(ModItems.EARTH_SWORD)
                 .add(ModItems.BONE_SWORD)
-                .add(ModItems.MIDAS_SWORD);
+                .add(ModItems.MIDAS_SWORD)
+                .add(ModItems.SOULBOUND_SWORD);
 
         getOrCreateTagBuilder(ItemTags.TRIDENT_ENCHANTABLE)
                 .add(ModItems.FIRE_JAVELIN);
 
         getOrCreateTagBuilder(ItemTags.CROSSBOW_ENCHANTABLE)
-                .add(ModItems.MAGMA_CROSSBOW);
+                .add(ModItems.MAGMA_CROSSBOW)
+                .add(ModItems.TOXBOW);
     }
 }

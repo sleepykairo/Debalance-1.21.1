@@ -1,0 +1,6 @@
+{
+    "parent": "debalance:item/toxbow",
+    "textures": {
+        "layer0": "debalance:item/toxbow_pulling_2"
+    }
+}

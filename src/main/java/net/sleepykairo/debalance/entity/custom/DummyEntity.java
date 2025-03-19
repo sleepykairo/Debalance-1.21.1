@@ -30,12 +30,14 @@ public class DummyEntity extends AmbientEntity {
 
     @Override
     public boolean damage(DamageSource source, float amount) {
-        if (source.getAttacker() instanceof PlayerEntity player) {
-            PlayerAttackAccess playerAttackAccess = (PlayerAttackAccess) player;
-
-            setCustomName(Text.literal(String.valueOf(playerAttackAccess.debalance$getAttackDamage())));
-            setCustomNameVisible(true);
-        }
+//        if (source.getAttacker() instanceof PlayerEntity player) {
+//            PlayerAttackAccess playerAttackAccess = (PlayerAttackAccess) player;
+//
+//            setCustomName(Text.literal(String.valueOf(playerAttackAccess.debalance$getAttackDamage())));
+//            setCustomNameVisible(true);
+//        }
+        setCustomName(Text.literal(String.valueOf(amount)));
+        setCustomNameVisible(true);
         return super.damage(source, amount);
     }
 

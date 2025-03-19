@@ -16,7 +16,11 @@ public class ModItems {
     public static final Item ORE_FINDER = registerItem("ore_finder", new OreFinderItem(new Item.Settings().maxCount(1)));
     public static final Item BLAZING_CORE = registerItem("blazing_core", new NetherAccessStatItem(new Item.Settings().maxCount(1)));
 
-    public static final Item RUBY_STAFF = registerItem("ruby_staff", new RubyStaffItem(20, new Item.Settings()
+    public static final Item ARROW_STAFF = registerItem("arrow_staff", new ArrowStaffItem(30, new Item.Settings()
+            .maxCount(1)
+            .maxDamage(150))
+    );
+    public static final Item RUBY_STAFF = registerItem("ruby_staff", new RubyStaffItem(50, new Item.Settings()
             .maxCount(1)
             .maxDamage(500))
     );
@@ -34,6 +38,11 @@ public class ModItems {
     public static final Item MAGMA_CROSSBOW = registerItem(
             "magma_crossbow",
             new MagmaCrossbowItem(new Item.Settings().maxCount(1).maxDamage(465).fireproof()
+                    .component(DataComponentTypes.CHARGED_PROJECTILES, ChargedProjectilesComponent.DEFAULT))
+    );
+    public static final Item TOXBOW = registerItem(
+            "toxbow",
+            new ToxbowItem(new Item.Settings().maxCount(1).maxDamage(465)
                     .component(DataComponentTypes.CHARGED_PROJECTILES, ChargedProjectilesComponent.DEFAULT))
     );
 

@@ -1,10 +1,12 @@
 {
   "item.debalance.dummy": "Training Dummy",
   "item.debalance.ore_finder": "Ore Finder",
+  "item.debalance.arrow_staff": "Arrow Staff",
   "item.debalance.ruby_staff": "Ruby Staff",
   "item.debalance.dripstone_cannon": "Dripstone Cannon",
   "item.debalance.fire_javelin": "Fire Javelin",
   "item.debalance.magma_crossbow": "Magma Crossbow",
+  "item.debalance.toxbow": "Toxbow",
 
   "item.debalance.marble_sword": "Marble Gladius",
   "item.debalance.vorpal_sword": "Vorpal Sword",

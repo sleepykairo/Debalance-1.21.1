@@ -27,6 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.DUMMY, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ORE_FINDER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ARROW_STAFF, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_STAFF, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.MARBLE_SWORD, Models.HANDHELD);

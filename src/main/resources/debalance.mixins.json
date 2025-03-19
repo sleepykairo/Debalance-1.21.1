@@ -7,12 +7,17 @@
     "EntityTickMixin",
     "EntityVoltageMixin",
     "PlayerAttackMixin",
+    "PlayerEntityRendererMixin",
     "PlayerNetherAccessMixin",
     "PlayerPermStatMixin",
     "PlayerShieldCooldownMixin",
-    "WitherEntityMixin"
+    "WitherEntityMixin",
+    "ArrowEntityAccessMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-	}
+  },
+  "client": [
+    "HeldItemRendererMixin"
+  ]
 }

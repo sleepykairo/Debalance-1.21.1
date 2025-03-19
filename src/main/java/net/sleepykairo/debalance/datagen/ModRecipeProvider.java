@@ -29,6 +29,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ARROW_STAFF)
+                .pattern(" SA")
+                .pattern(" BS")
+                .pattern("S  ")
+                .input('A', Items.ARROW)
+                .input('B', Items.BOW)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.ARROW), conditionsFromItem(Items.ARROW))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MAGMA_CROSSBOW)
                 .pattern("PGP")
                 .pattern("MCM")

@@ -8,6 +8,7 @@ import net.sleepykairo.debalance.datagen.*;
 import net.sleepykairo.debalance.enchantment.ModEnchantments;
 import net.sleepykairo.debalance.world.ModConfiguredFeatures;
 import net.sleepykairo.debalance.world.ModPlacedFeatures;
+import net.sleepykairo.debalance.world.biome.ModBiomes;
 
 public class DebalanceDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -28,5 +29,6 @@ public class DebalanceDataGenerator implements DataGeneratorEntrypoint {
 
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
 	}
 }
