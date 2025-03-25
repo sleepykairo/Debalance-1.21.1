@@ -22,8 +22,8 @@ public class PlayerEntityEatFoodMixin {
         PlayerEntityArmorAccess playerEntityArmorAccess = (PlayerEntityArmorAccess) player;
 
         if (playerEntityArmorAccess.debalance$getArmorType().equals("honeycomb") && !world.isClient) {
-            float saturation = stack.isOf(Items.HONEY_BOTTLE) ? 1.1F : foodComponent.saturation() / 2;
             int nutrition = Math.max(1, foodComponent.nutrition() / 2);
+            float saturation = stack.isOf(Items.HONEY_BOTTLE) ? 1.1F : foodComponent.saturation() / 2;
 
             player.getHungerManager().add(nutrition, saturation);
             player.heal(nutrition);

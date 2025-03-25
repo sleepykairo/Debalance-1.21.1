@@ -28,7 +28,7 @@ public abstract class PlayerEntityArmorMixin implements PlayerEntityArmorAccess 
 
         for (ItemStack armorStack: player.getInventory().armor) {
             if(!(armorStack.getItem() instanceof ArmorItem)) {
-                return null;
+                return "";
             }
         }
 
@@ -52,7 +52,7 @@ public abstract class PlayerEntityArmorMixin implements PlayerEntityArmorAccess 
                 return ((ArmorItem) boots).getMaterial().getIdAsString();
             }
 
-            return null;
+            return "";
         }
 
         if (((ModArmorItem) boots).getArmorTypeRegistryEntry().equals(((ModArmorItem) leggings).getArmorTypeRegistryEntry()) &&
@@ -60,7 +60,7 @@ public abstract class PlayerEntityArmorMixin implements PlayerEntityArmorAccess 
                 ((ModArmorItem) boots).getArmorTypeRegistryEntry().equals(((ModArmorItem) helmet).getArmorTypeRegistryEntry())) {
             return ((ModArmorItem) boots).getArmorType();
         } else {
-            return null;
+            return "";
         }
     }
 
