@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:crossbow"
+    },
+    "F": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "M": {
+      "item": "minecraft:mossy_cobblestone"
+    },
+    "P": {
+      "item": "minecraft:poisonous_potato"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    },
+    "p": {
+      "item": "minecraft:pufferfish"
+    }
+  },
+  "pattern": [
+    "PFP",
+    "MCM",
+    "SpS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "debalance:toxbow"
+  }
+}

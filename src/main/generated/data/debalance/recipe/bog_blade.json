@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond_sword"
+    },
+    "F": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "L": {
+      "item": "minecraft:lily_pad"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    },
+    "V": {
+      "item": "minecraft:vine"
+    }
+  },
+  "pattern": [
+    "VFV",
+    "SDS",
+    "LFL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "debalance:bog_blade"
+  }
+}

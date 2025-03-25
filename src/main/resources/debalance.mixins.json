@@ -3,16 +3,18 @@
   "package": "net.sleepykairo.debalance.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "ArrowEntityAccessMixin",
     "DisableShieldMixin",
     "EntityTickMixin",
     "EntityVoltageMixin",
     "PlayerAttackMixin",
+    "PlayerEntityArmorMixin",
+    "PlayerEntityEatFoodMixin",
     "PlayerEntityRendererMixin",
     "PlayerNetherAccessMixin",
     "PlayerPermStatMixin",
     "PlayerShieldCooldownMixin",
-    "WitherEntityMixin",
-    "ArrowEntityAccessMixin"
+    "WitherEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

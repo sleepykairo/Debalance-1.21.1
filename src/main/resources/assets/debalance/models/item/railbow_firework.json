@@ -1,0 +1,6 @@
+{
+    "parent": "debalance:item/railbow",
+    "textures": {
+        "layer0": "debalance:item/railbow_firework"
+    }
+}

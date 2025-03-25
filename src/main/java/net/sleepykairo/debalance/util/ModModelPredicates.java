@@ -3,22 +3,19 @@ package net.sleepykairo.debalance.util;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.ChargedProjectilesComponent;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.CrossbowItem;
-import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.sleepykairo.debalance.Debalance;
-import net.sleepykairo.debalance.component.ModDataComponentTypes;
 import net.sleepykairo.debalance.item.ModItems;
-import net.sleepykairo.debalance.item.custom.MagmaCrossbowItem;
 import net.sleepykairo.debalance.item.custom.MidasSwordItem;
 
 public class ModModelPredicates {
     public static void registerModelPredicates() {
         registerCrossbow(ModItems.MAGMA_CROSSBOW);
         registerCrossbow(ModItems.TOXBOW);
+        registerCrossbow(ModItems.RAILBOW);
 
         ModelPredicateProviderRegistry.register(ModItems.MIDAS_SWORD, Identifier.of(Debalance.MOD_ID, "midas_sword_value"),
                 (stack, world, entity, seed) -> entity == null ? 0 : MidasSwordItem.getValuePercent(stack));

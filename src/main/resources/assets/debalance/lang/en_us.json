@@ -7,6 +7,7 @@
   "item.debalance.fire_javelin": "Fire Javelin",
   "item.debalance.magma_crossbow": "Magma Crossbow",
   "item.debalance.toxbow": "Toxbow",
+  "item.debalance.railbow": "Railbow",
 
   "item.debalance.marble_sword": "Marble Gladius",
   "item.debalance.vorpal_sword": "Vorpal Sword",
@@ -16,6 +17,12 @@
   "item.debalance.midas_sword.half": "Prince Midas' Royal Blade of Might",
   "item.debalance.midas_sword.max": "§6King Midas' Legendary Royal Greatsword of Greed",
   "item.debalance.soulbound_sword": "Soulbound Sword",
+  "item.debalance.bog_blade": "Bog Blade",
+
+  "item.debalance.honeycomb_helmet": "Honeycomb Helmet",
+  "item.debalance.honeycomb_chestplate": "Honeycomb Chestplate",
+  "item.debalance.honeycomb_leggings": "Honeycomb Leggings",
+  "item.debalance.honeycomb_boots": "Honeycomb Boots",
 
   "tooltip.debalance.info": "SNEAK for info",
   "tooltip.debalance.soulbound_sword.info": "Steals the energy of your enemies",

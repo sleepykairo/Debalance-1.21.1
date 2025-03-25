@@ -45,6 +45,11 @@ public class ModItems {
             new ToxbowItem(new Item.Settings().maxCount(1).maxDamage(465)
                     .component(DataComponentTypes.CHARGED_PROJECTILES, ChargedProjectilesComponent.DEFAULT))
     );
+    public static final Item RAILBOW = registerItem(
+            "railbow",
+            new RailbowItem(new Item.Settings().maxCount(1).maxDamage(465)
+                    .component(DataComponentTypes.CHARGED_PROJECTILES, ChargedProjectilesComponent.DEFAULT))
+    );
 
     public static final Item MARBLE_SWORD = registerItem(
             "marble_sword", new SwordItem(ModToolMaterials.MARBLE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(
@@ -71,6 +76,23 @@ public class ModItems {
             "soulbound_sword", new SoulboundSwordItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(
                             ToolMaterials.NETHERITE, -2, -2.4F)))
     );
+    public static final Item BOG_BLADE = registerItem(
+            "bog_blade", new BogBladeItem(ToolMaterials.IRON, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(
+                    ToolMaterials.IRON, 4, -2.4F)))
+    );
+
+    public static final Item HONEYCOMB_HELMET = registerItem("honeycomb_helmet",
+            new ModArmorItem("honeycomb", ModArmorMaterials.HONEYCOMB_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item HONEYCOMB_CHESTPLATE = registerItem("honeycomb_chestplate",
+            new ModArmorItem("honeycomb", ModArmorMaterials.HONEYCOMB_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item HONEYCOMB_LEGGINGS = registerItem("honeycomb_leggings",
+            new ModArmorItem("honeycomb", ModArmorMaterials.HONEYCOMB_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item HONEYCOMB_BOOTS = registerItem("honeycomb_boots",
+            new ModArmorItem("honeycomb", ModArmorMaterials.HONEYCOMB_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
 
     private static Item registerItem(String name, Item item) {

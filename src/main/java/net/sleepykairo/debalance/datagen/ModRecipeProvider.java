@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -39,15 +40,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.ARROW), conditionsFromItem(Items.ARROW))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MAGMA_CROSSBOW)
-                .pattern("PGP")
+                .pattern("PFP")
                 .pattern("MCM")
-                .pattern("PGP")
+                .pattern("PFP")
                 .input('P', Items.BLAZE_POWDER)
-                .input('G', Items.GUNPOWDER)
+                .input('F', Items.FIRE_CHARGE)
                 .input('M', Items.MAGMA_CREAM)
                 .input('C', Items.CROSSBOW)
                 .criterion(hasItem(Items.CROSSBOW), conditionsFromItem(Items.CROSSBOW))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TOXBOW)
+                .pattern("PFP")
+                .pattern("MCM")
+                .pattern("SpS")
+                .input('P', Items.POISONOUS_POTATO)
+                .input('F', Items.FERMENTED_SPIDER_EYE)
+                .input('M', Items.MOSSY_COBBLESTONE)
+                .input('C', Items.CROSSBOW)
+                .input('S', Items.SLIME_BALL)
+                .input('p', Items.PUFFERFISH)
+                .criterion(hasItem(Items.CROSSBOW), conditionsFromItem(Items.CROSSBOW))
+                .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BONE_SWORD)
                 .pattern("SBS")
                 .pattern("SBS")
@@ -68,6 +82,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('L', Items.SOUL_LANTERN)
                 .input('R', Items.RESPAWN_ANCHOR)
                 .criterion(hasItem(Items.WITHER_SKELETON_SKULL), conditionsFromItem(Items.WITHER_SKELETON_SKULL))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BOG_BLADE)
+                .pattern("VFV")
+                .pattern("SDS")
+                .pattern("LFL")
+                .input('V', Items.VINE)
+                .input('F', Items.FERMENTED_SPIDER_EYE)
+                .input('S', Items.SLIME_BALL)
+                .input('D', Items.DIAMOND_SWORD)
+                .input('L', Items.LILY_PAD)
+                .criterion(hasItem(Items.SPIDER_EYE), conditionsFromItem(Items.SPIDER_EYE))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HONEYCOMB_HELMET, 1)
+                .input(Items.IRON_HELMET)
+                .input(Items.HONEYCOMB, 8)
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HONEYCOMB_CHESTPLATE, 1)
+                .input(Items.IRON_CHESTPLATE)
+                .input(Items.HONEYCOMB, 8)
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HONEYCOMB_LEGGINGS, 1)
+                .input(Items.IRON_LEGGINGS)
+                .input(Items.HONEYCOMB, 8)
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HONEYCOMB_BOOTS, 1)
+                .input(Items.IRON_BOOTS)
+                .input(Items.HONEYCOMB, 8)
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
                 .offerTo(exporter);
     }
 }

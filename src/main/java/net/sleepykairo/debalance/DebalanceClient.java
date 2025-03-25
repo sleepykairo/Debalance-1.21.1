@@ -10,6 +10,7 @@ import net.sleepykairo.debalance.entity.client.*;
 import net.sleepykairo.debalance.entity.client.particle.FireJavelinExplosionParticle;
 import net.sleepykairo.debalance.entity.client.particle.ModParticles;
 import net.sleepykairo.debalance.entity.custom.FireJavelinEntity;
+import net.sleepykairo.debalance.entity.custom.RailbowArrowEntity;
 import net.sleepykairo.debalance.util.ModModelPredicates;
 
 public class DebalanceClient implements ClientModInitializer {
@@ -22,6 +23,7 @@ public class DebalanceClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.DUMMY, DummyEntityRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(FireJavelinEntityModel.FIRE_JAVELIN, FireJavelinEntityModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.FIRE_JAVELIN_ENTITY, FireJavelinEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.RAILBOW_ARROW_ENTITY, RailbowArrowEntityRenderer::new);
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.FIRE_JAVELIN_EXPLOSION_PARTICLE, FireJavelinExplosionParticle.Factory::new);
 

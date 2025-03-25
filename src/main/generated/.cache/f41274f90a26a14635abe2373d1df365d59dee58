@@ -1,4 +1,5 @@
-// 1.21.1	2025-03-19T15:31:46.4558373	Debalance/Tags for minecraft:item
+// 1.21.1	2025-03-23T19:05:39.6107413	Debalance/Tags for minecraft:item
 851b261bb41141234fcf2e2c0f7d3347a5bbea11 data\minecraft\tags\item\enchantable\trident.json
-0917f9e5631f2eed15f38f5632d4cce9ae631f4f data\minecraft\tags\item\swords.json
-8baa2220c349c25fbd555292d73b8e4d4b8cf2e0 data\minecraft\tags\item\enchantable\crossbow.json
+4c6fd01a28d061af537371a4b7d8f6240cce6b86 data\minecraft\tags\item\trimmable_armor.json
+3408add23443bd3a6a6350094b49b49c18eacc7d data\minecraft\tags\item\swords.json
+06edf42a99799b7c7e050aebafd3afe08bde7d59 data\minecraft\tags\item\enchantable\crossbow.json

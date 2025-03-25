@@ -11,10 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.sleepykairo.debalance.Debalance;
-import net.sleepykairo.debalance.entity.custom.BlockProjectileEntity;
-import net.sleepykairo.debalance.entity.custom.DummyEntity;
-import net.sleepykairo.debalance.entity.custom.FireJavelinEntity;
-import net.sleepykairo.debalance.entity.custom.VoltageLightningEntity;
+import net.sleepykairo.debalance.entity.custom.*;
 
 public class ModEntities {
 
@@ -29,6 +26,15 @@ public class ModEntities {
     public static final EntityType<FireJavelinEntity> FIRE_JAVELIN_ENTITY = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(Debalance.MOD_ID, "fire_javelin"),
             EntityType.Builder.<FireJavelinEntity>create(FireJavelinEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.5F, 0.5F)
+                    .eyeHeight(0.13F)
+                    .maxTrackingRange(4)
+                    .trackingTickInterval(20)
+                    .build()
+    );
+    public static final EntityType<RailbowArrowEntity> RAILBOW_ARROW_ENTITY = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Debalance.MOD_ID, "railbow_arrow"),
+            EntityType.Builder.<RailbowArrowEntity>create(RailbowArrowEntity::new, SpawnGroup.MISC)
                     .dimensions(0.5F, 0.5F)
                     .eyeHeight(0.13F)
                     .maxTrackingRange(4)

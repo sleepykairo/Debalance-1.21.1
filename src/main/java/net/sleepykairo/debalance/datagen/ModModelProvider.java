@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.sleepykairo.debalance.block.ModBlocks;
 import net.sleepykairo.debalance.item.ModItems;
 
@@ -35,5 +36,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.EARTH_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BONE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SOULBOUND_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BOG_BLADE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.HONEYCOMB_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.HONEYCOMB_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.HONEYCOMB_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.HONEYCOMB_BOOTS);
     }
 }

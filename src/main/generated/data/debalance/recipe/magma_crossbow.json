@@ -5,8 +5,8 @@
     "C": {
       "item": "minecraft:crossbow"
     },
-    "G": {
-      "item": "minecraft:gunpowder"
+    "F": {
+      "item": "minecraft:fire_charge"
     },
     "M": {
       "item": "minecraft:magma_cream"
@@ -16,9 +16,9 @@
     }
   },
   "pattern": [
-    "PGP",
+    "PFP",
     "MCM",
-    "PGP"
+    "PFP"
   ],
   "result": {
     "count": 1,
