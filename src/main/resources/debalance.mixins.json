@@ -9,7 +9,7 @@
     "EntityVoltageMixin",
     "PlayerAttackMixin",
     "PlayerEntityArmorMixin",
-    "PlayerEntityEatFoodMixin",
+    "PlayerEntityModArmorMixin",
     "PlayerEntityRendererMixin",
     "PlayerNetherAccessMixin",
     "PlayerPermStatMixin",

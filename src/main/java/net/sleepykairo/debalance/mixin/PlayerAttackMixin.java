@@ -51,19 +51,20 @@ public abstract class PlayerAttackMixin implements PlayerAttackAccess {
             )
     )
     private boolean redirectCritDamage(Entity instance, DamageSource source, float amount, @Local(ordinal = 0) boolean bl) {
+        PlayerEntity player = (PlayerEntity) (Object) this;
         float finalAmount = amount;
         boolean bl3 =
-                ((PlayerEntity) (Object) this).fallDistance > 0.0F
-                && !((PlayerEntity) (Object) this).isOnGround()
-                && !((PlayerEntity) (Object) this).isClimbing()
-                && !((PlayerEntity) (Object) this).isTouchingWater()
-                && !((PlayerEntity) (Object) this).hasStatusEffect(StatusEffects.BLINDNESS)
-                && !((PlayerEntity) (Object) this).hasVehicle()
+                player.fallDistance > 0.0F
+                && !player.isOnGround()
+                && !player.isClimbing()
+                && !player.isTouchingWater()
+                && !player.hasStatusEffect(StatusEffects.BLINDNESS)
+                && !player.hasVehicle()
                 && instance instanceof LivingEntity
-                && !((PlayerEntity) (Object) this).isSprinting()
+                && !player.isSprinting()
                 && bl;
 
-        finalAmount *= bl3 && source.getWeaponStack().getItem().equals(ModItems.VORPAL_SWORD) ? 1.5F : 1F;
+        finalAmount *= bl3 && source.getWeaponStack().isOf(ModItems.VORPAL_SWORD) ? 1.5F : 1F;
 
         return instance.damage(source, finalAmount);
     }

@@ -14,7 +14,7 @@ public class BogBladeItem extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        StatusEffectInstance statusEffectInstance = new StatusEffectInstance(StatusEffects.POISON, 50, 0);
+        StatusEffectInstance statusEffectInstance = new StatusEffectInstance(StatusEffects.POISON, 50, 1);
         target.addStatusEffect(statusEffectInstance);
         return super.postHit(stack, target, attacker);
     }

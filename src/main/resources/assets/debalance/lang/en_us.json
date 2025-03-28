@@ -23,6 +23,10 @@
   "item.debalance.honeycomb_chestplate": "Honeycomb Chestplate",
   "item.debalance.honeycomb_leggings": "Honeycomb Leggings",
   "item.debalance.honeycomb_boots": "Honeycomb Boots",
+  "item.debalance.guardian_helmet": "Guardian Helmet",
+  "item.debalance.guardian_chestplate": "Guardian Chestplate",
+  "item.debalance.guardian_leggings": "Guardian Leggings",
+  "item.debalance.guardian_boots": "Guardian Boots",
 
   "tooltip.debalance.info": "SNEAK for info",
   "tooltip.debalance.soulbound_sword.info": "Steals the energy of your enemies",

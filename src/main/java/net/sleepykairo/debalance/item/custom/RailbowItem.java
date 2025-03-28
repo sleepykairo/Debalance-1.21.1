@@ -11,6 +11,7 @@ import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvents;
@@ -72,6 +73,21 @@ public class RailbowItem extends CrossbowItem {
                 }
                 this.shoot(shooter, projectileEntity, j, speed * 1.5F, divergence, k, target);
                 world.spawnEntity(projectileEntity);
+
+                if (shooter.getWorld() instanceof ServerWorld serverWorld) {
+                    serverWorld.playSound(null, shooter.getX(), shooter.getY(), shooter.getZ(),
+                            SoundEvents.ENTITY_GENERIC_EXPLODE, shooter.getSoundCategory(), 1.0F, h);
+
+                    Vec3d pos = shooter.getRotationVector().normalize().multiply((double) 2 / 3);
+                    serverWorld.spawnParticles(
+                            ParticleTypes.SMOKE,
+                            projectileEntity.getX() + pos.getX(), projectileEntity.getEyeY() + pos.getY(), projectileEntity.getZ() + pos.getZ(),
+                            25,
+                            0.1, 0.1,0.1,
+                            0.25
+                    );
+                }
+
                 stack.damage(this.getWeaponStackDamage(itemStack), shooter, LivingEntity.getSlotForHand(hand));
                 if (stack.isEmpty()) {
                     break;
@@ -97,7 +113,6 @@ public class RailbowItem extends CrossbowItem {
 
         projectile.setVelocity((double)vector3f.x(), (double)vector3f.y(), (double)vector3f.z(), speed, divergence);
         float h = 2;
-        shooter.getWorld().playSound(null, shooter.getX(), shooter.getY(), shooter.getZ(), SoundEvents.ENTITY_GENERIC_EXPLODE, shooter.getSoundCategory(), 1.0F, h);
     }
 
     private static Vector3f calcVelocity(LivingEntity shooter, Vec3d direction, float yaw) {

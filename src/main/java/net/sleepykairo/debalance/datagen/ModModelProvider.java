@@ -42,5 +42,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.HONEYCOMB_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.HONEYCOMB_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.HONEYCOMB_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.GUARDIAN_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.GUARDIAN_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.GUARDIAN_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.GUARDIAN_BOOTS);
     }
 }

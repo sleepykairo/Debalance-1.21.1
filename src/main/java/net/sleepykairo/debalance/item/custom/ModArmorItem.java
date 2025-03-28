@@ -21,9 +21,9 @@ public class ModArmorItem extends ArmorItem {
 
     private static final Map<RegistryEntry<String>, List<StatusEffectInstance>> ARMOR_TYPE_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<RegistryEntry<String>, List<StatusEffectInstance>>())
-                    .put(RegistryEntry.of("honeycomb"),
-                            List.of(new StatusEffectInstance(StatusEffects.HASTE, 400, 2, false, false),
-                                    new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 1, false, false))).build();
+                    .put(RegistryEntry.of("guardian"),
+                            List.of(new StatusEffectInstance(StatusEffects.HASTE, 400, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.WATER_BREATHING, 400, 0, false, false))).build();
 
     public ModArmorItem(String armorType, RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
         super(material, type, settings);

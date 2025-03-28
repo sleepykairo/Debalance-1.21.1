@@ -94,6 +94,19 @@ public class ModItems {
             new ModArmorItem("honeycomb", ModArmorMaterials.HONEYCOMB_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
+    public static final Item GUARDIAN_HELMET = registerItem("guardian_helmet",
+            new ModArmorItem("guardian", ModArmorMaterials.GUARDIAN_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item GUARDIAN_CHESTPLATE = registerItem("guardian_chestplate",
+            new ModArmorItem("guardian", ModArmorMaterials.GUARDIAN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item GUARDIAN_LEGGINGS = registerItem("guardian_leggings",
+            new ModArmorItem("guardian", ModArmorMaterials.GUARDIAN_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item GUARDIAN_BOOTS = registerItem("guardian_boots",
+            new ModArmorItem("guardian", ModArmorMaterials.GUARDIAN_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Debalance.MOD_ID, name), item);
